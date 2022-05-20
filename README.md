@@ -1,0 +1,4 @@
+- 👋 Hi, I’m @dominusmmp
+- 👀 I’m interested in technology.
+- 🌱 I’m currently working as a freelance frontend developer.
+- 📫 You can reach me via my email (dominusmmp@gmail.com).
