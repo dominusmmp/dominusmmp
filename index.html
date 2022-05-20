@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html data-theme="light" x-bind:dir="isRtl && 'rtl'"
+    x-data="{isRtl: (new URLSearchParams(location.search).get('rtl') === 'true')}">
+
+<head>
+    <!-- BEGIN: Default Head -->
+
+    <!-- BEGIN: HTML Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FF9900" />
+    <meta name="description" content="dominus world!" />
+    <meta name="keywords" content="dominusmmp, dominus" />
+    <meta name="author" content="dominusmmp" />
+    <link href="" rel="shortcut icon" />
+    <title>Welcome To My World!</title>
+    <!-- END: HTML Meta Tags -->
+
+    <link rel="stylesheet" href="./assets/css/index.css" />
+</head>
+
+<body class="bg-gray-200">
+    <div class="w-screen h-screen flex flex-col justify-center items-center">
+        <div
+            class="bg-white flex flex-col justify-center items-center space-y-4 p-6 border rounded-xl shadow-lg select-none">
+            <div class="w-full text-center text-2xl text-gray-400 pb-4 border-b">Coming Soon!</div>
+            <div class="flex flex-col justify-center items-center">
+                <div class="text-2xl text-gray-400">Contact me via:</div>
+                <a href="mailto:dominusmmp@gmail.com" class="text-2xl text-gray-400">dominusmmp@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./assets/js/index.js"></script>
+</body>
+
+</html>
