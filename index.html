@@ -1,36 +1,495 @@
 <!DOCTYPE html>
-<html data-theme="light" x-bind:dir="isRtl && 'rtl'"
-    x-data="{isRtl: (new URLSearchParams(location.search).get('rtl') === 'true')}">
+<html :lang="lang" :dir="isRtl && 'rtl'"
+    x-data="{lang: new URLSearchParams(location.search).get('lang') || 'en', data: {}, isRtl: (['fa-IR', 'ar'].indexOf(new URLSearchParams(location.search).get('lang')) !== -1)}">
 
 <head>
-    <!-- BEGIN: Default Head -->
-
     <!-- BEGIN: HTML Meta Tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#FF9900" />
-    <meta name="description" content="dominus world!" />
-    <meta name="keywords" content="dominusmmp, dominus" />
-    <meta name="author" content="dominusmmp" />
-    <link href="" rel="shortcut icon" />
-    <title>Welcome To My World!</title>
+    <meta name="theme-color" content="#FAFAFA" />
+    <meta name="description" content="Mohammad Mohammadpour Resume" />
+    <meta name="keywords" content="resume,cv,Mohammad,Mohammadpour,Mohammad Mohammadpour,dominusmmp, dominus" />
+    <meta name="author" content="Mohammad Mohammadpour" />
+    <link href="./assets/img/logo.png" rel="shortcut icon" />
+    <title>Mohammad Mohammadpour</title>
     <!-- END: HTML Meta Tags -->
+
+    <!-- Tags -->
+    <link rel="canonical" href="https://dominusmmp.pages.dev/">
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mohammad Mohammadpour">
+    <meta property="og:description" content="Mohammad Mohammadpour Resume">
+    <meta property="og:url" content="dominusmmp.pages.dev/">
+    <meta property="og:site_name" content="راه نو">
+    <meta property="og:image" content="https://dominusmmp.pages.dev/assets/img/me.jpg">
+    <meta property="og:image:width" content="64">
+    <meta property="og:image:height" content="64">
+    <meta property="og:image:type" content="image/jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- START: Preloader -->
+    <style>
+        svg.tea {
+            --secondary: #302333;
+        }
+
+        svg.tea #teabag {
+            transform-origin: top center;
+            transform: rotate(3deg);
+            animation: swing 2s infinite;
+        }
+
+        svg.tea #steamL {
+            stroke-dasharray: 13;
+            stroke-dashoffset: 13;
+            animation: steamLarge 2s infinite;
+        }
+
+        svg.tea #steamR {
+            stroke-dasharray: 9;
+            stroke-dashoffset: 9;
+            animation: steamSmall 2s infinite;
+        }
+
+        @-moz-keyframes swing {
+            50% {
+                transform: rotate(-3deg);
+            }
+        }
+
+        @-webkit-keyframes swing {
+            50% {
+                transform: rotate(-3deg);
+            }
+        }
+
+        @-o-keyframes swing {
+            50% {
+                transform: rotate(-3deg);
+            }
+        }
+
+        @keyframes swing {
+            50% {
+                transform: rotate(-3deg);
+            }
+        }
+
+        @-moz-keyframes steamLarge {
+            0% {
+                stroke-dashoffset: 13;
+                opacity: 0.6;
+            }
+
+            100% {
+                stroke-dashoffset: 39;
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes steamLarge {
+            0% {
+                stroke-dashoffset: 13;
+                opacity: 0.6;
+            }
+
+            100% {
+                stroke-dashoffset: 39;
+                opacity: 0;
+            }
+        }
+
+        @-o-keyframes steamLarge {
+            0% {
+                stroke-dashoffset: 13;
+                opacity: 0.6;
+            }
+
+            100% {
+                stroke-dashoffset: 39;
+                opacity: 0;
+            }
+        }
+
+        @keyframes steamLarge {
+            0% {
+                stroke-dashoffset: 13;
+                opacity: 0.6;
+            }
+
+            100% {
+                stroke-dashoffset: 39;
+                opacity: 0;
+            }
+        }
+
+        @-moz-keyframes steamSmall {
+            10% {
+                stroke-dashoffset: 9;
+                opacity: 0.6;
+            }
+
+            80% {
+                stroke-dashoffset: 27;
+                opacity: 0;
+            }
+
+            100% {
+                stroke-dashoffset: 27;
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes steamSmall {
+            10% {
+                stroke-dashoffset: 9;
+                opacity: 0.6;
+            }
+
+            80% {
+                stroke-dashoffset: 27;
+                opacity: 0;
+            }
+
+            100% {
+                stroke-dashoffset: 27;
+                opacity: 0;
+            }
+        }
+
+        @-o-keyframes steamSmall {
+            10% {
+                stroke-dashoffset: 9;
+                opacity: 0.6;
+            }
+
+            80% {
+                stroke-dashoffset: 27;
+                opacity: 0;
+            }
+
+            100% {
+                stroke-dashoffset: 27;
+                opacity: 0;
+            }
+        }
+
+        @keyframes steamSmall {
+            10% {
+                stroke-dashoffset: 9;
+                opacity: 0.6;
+            }
+
+            80% {
+                stroke-dashoffset: 27;
+                opacity: 0;
+            }
+
+            100% {
+                stroke-dashoffset: 27;
+                opacity: 0;
+            }
+        }
+    </style>
+    <!-- END: Preloader -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link rel="preload" href="./fonts/Jost-Medium.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
 
     <link rel="stylesheet" href="./assets/css/index.css" />
 </head>
 
-<body class="bg-gray-200">
-    <div class="w-screen h-screen flex flex-col justify-center items-center">
-        <div
-            class="bg-white flex flex-col justify-center items-center space-y-4 p-6 border rounded-xl shadow-lg select-none">
-            <div class="w-full text-center text-2xl text-gray-400 pb-4 border-b">Coming Soon!</div>
-            <div class="flex flex-col justify-center items-center">
-                <div class="text-2xl text-gray-400">Contact me via:</div>
-                <a href="mailto:dominusmmp@gmail.com" class="text-2xl text-gray-400">dominusmmp@gmail.com</a>
-            </div>
-        </div>
+<body x-data="{ fetch: fetch('./assets/data/data.json').then(res => res.json()).then(res => data = res) }">
+
+    <!-- Preloader ------------------------------------------>
+    <div class="w-full h-full fixed flex flex-col justify-center items-center z-50 bg inset-0 bg-white"
+        x-data="{windowLoad: true}" @load.window="windowLoad = ! windowLoad" x-show="windowLoad"
+        x-transition.opacity.delay.50ms.duration.1000ms>
+        <svg class="tea mb-1" width="48" height="62" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
+                stroke="var(--secondary)" stroke-width="2"></path>
+            <path
+                d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
+                stroke="var(--secondary)" stroke-width="2"></path>
+            <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd"
+                d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z">
+            </path>
+            <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" stroke="var(--secondary)"></path>
+            <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        loading...
     </div>
+
+    <!-- Background Grid ------------------------------------------>
+    <div class="fixed w-full h-full -z-10 inset-0 bg-pattern-grid bg-[bottom_1px_center]">
+    </div>
+    <!-- end Background Grid -->
+
+    <!-- Language Button ------------------------------------------>
+    <div class="fixed top-6 flex right-6 space-x-1 z-40 print:hidden">
+        <a onclick="window.print()" class="btn btn-sm btn-circle rtl:order-last hidden">&#128438;</a>
+        <a href="/?lang=en" class="btn btn-sm btn-circle">En</a>
+        <a href="/?lang=fa-IR" class="btn btn-sm btn-circle rtl:order-first">Fa</a>
+    </div>
+    <!-- end Language Button -->
+
+    <main class="font-jost rtl:font-shabnam hyphens-manual">
+        <!-- Page -------------------------------------------->
+        <div
+            class="max-w-3xl p-3 mx-auto my-auto bg-pattern-dot border shadow-xl print:!bg-none print:shadow-none print:border-0 page print:max-w-letter print:max-h-letter print:mx-0 print:my-o lg:h-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 lg:my-6 rounded-2xl print:bg-white relative overflow-hidden">
+
+
+            <header
+                class="inline-flex flex-col md:flex-row print:flex-row items-center justify-between w-full mb-3 align-top pb-4 md:pb-0 print:pb-0 border-b-8">
+
+                <div class="w-full md:max-dw-[80%] md:w-max print:w-max text-center md:text-justify print:text-justify">
+                    <!-- Name ---------------------------------------->
+                    <h1 class="mb-3 md:mb-0 print:mb-0 text-5xl font-bold leading-10 md:leading-relaxed print:leading-snug text-gray-750"
+                        x-text="data.person.name[lang]"></h1>
+
+                    <!--Job Title--------------------------------------------->
+                    <h2 class="m-0 md:ml-2 md:rtl:ml-0 md:rtl:mr-2 print:ml-2 print:rtl:mr-2 text-2xl font-semibold text-gray-700 leading-snugish"
+                        x-text="data.person.jobTitle[lang]"></h2>
+
+                    <template x-if="data.person.location[lang]">
+                        <!--Location --------------------------------------------->
+                        <h3 class="m-0 mt-2 md:ml-2 md:rtl:ml-0 md:rtl:mr-2 print:ml-2 print:rtl:mr-2 font-semibold text-md text-gray-550 leading-snugish"
+                            x-text="data.person.location[lang]">
+                        </h3>
+                    </template>
+                </div>
+
+                <!-- Image ------------------------------------------>
+                <div
+                    class="mb-5 mx-auto md:mx-0 print:mx-0 order-first md:order-none print:order-none w-32 rounded-t-full rounded-bl-full rounded-br-[3000px] rtl:rounded-br-full rtl:rounded-bl-[3000px] border-2 border-white ring-2 ring-offset-0 ring-black box-content overflow-hidden">
+                    <img src="./assets/img/me.jpg" alt="" class="w-32 filter grayscale scale-125" width="48">
+                </div>
+
+            </header>
+
+            <!-- Column ------------------------------------------>
+            <div
+                class="col-gap-16 md:col-count-2 print:col-count-2 md:h-letter-col-full print:h-letter-col-full col-fill-balance">
+                <!-- Contact Information ------------------------------------------>
+                <section class="mt-4 first:mt-0">
+                    <!-- To keep in the same column ------------------------------------>
+                    <div class="break-inside-avoid">
+                        <section class="pb-2 border-b-2 break-inside-avoid">
+                            <ul class="list-inside pr-7 rtl:pr-0 rtl:pl-7">
+
+                                <!--Portfolio ------------------------------------------>
+                                <li
+                                    class="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-md hover:text-gray-700">
+                                    <a :href="data.details.portfolio.link" class="group" target="_blank">
+                                        <span
+                                            class="inline-block w-20 text-lg font-semibold text-gray-700 leading-snugish"
+                                            x-text="data.details.portfolio.title[lang]"></span>
+                                        <span x-text="data.details.portfolio.text" dir="ltr"></span>
+                                        <span
+                                            class="inline-block font-normal transition duration-100 ease-in text-gray-550 print:hidden group-hover:text-gray-700"
+                                            x-text="isRtl ? '↖️' : '↗'"></span>
+                                    </a>
+                                </li>
+
+                                <!--Github ------------------------------------------>
+                                <li
+                                    class="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-md hover:text-gray-700">
+                                    <a :href="data.details.github.link" class="group" target="_blank">
+                                        <span
+                                            class="inline-block w-20 text-lg font-semibold text-gray-700 leading-snugish"
+                                            x-text="data.details.github.title[lang]"></span>
+                                        <span x-text="data.details.github.text" dir="ltr"></span>
+                                        <span
+                                            class="inline-block font-normal transition duration-100 ease-in text-gray-550 print:hidden group-hover:text-gray-700"
+                                            x-text="isRtl ? '↖️' : '↗'"></span>
+                                    </a>
+                                </li>
+
+                                <!--Email ------------------------------------------>
+                                <li
+                                    class="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-md hover:text-gray-700">
+                                    <a :href="data.details.email.link" class="group">
+                                        <span
+                                            class="inline-block w-20 text-lg font-semibold text-gray-700 leading-snugish"
+                                            x-text="data.details.email.title[lang]"></span>
+                                        <span x-text="data.details.email.text" dir="ltr"></span>
+                                    </a>
+                                </li>
+
+                                <!--Phone ------------------------------------------>
+                                <li
+                                    class="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-md hover:text-gray-700">
+                                    <a :href="data.details.phone.link">
+                                        <span
+                                            class="inline-block w-20 text-lg font-semibold text-gray-700 leading-snugish"
+                                            x-text="data.details.phone.title[lang]"></span>
+                                        <span x-text="data.details.phone.text" dir="ltr"></span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+
+                <!--Summary ------------------------------------------>
+                <section class="hiddens pb-2 md:pb-4 print:pb-4 mt-4 border-b-4 first:mt-0">
+                    <!-- To keep in the same column -->
+                    <div class="break-inside-avoid">
+                        <h2 class="mb-2 text-lg font-bold tracking-widest text-gray-700"
+                            x-text="data.summary.title[lang].toUpperCase()"></h2>
+
+                        <section class="mb-2 break-inside-avoid">
+                            <p class="mt-2 leading-normal text-gray-700 text-md rtl:text-[1rem] rtl:leading-7 rtl:font-light"
+                                x-text="data.summary.content[lang]"></p>
+                        </section>
+                    </div>
+                </section>
+
+                <!--Experience ------------------------------------------>
+                <section class="pb-2 md:pb-4 print:pb-4 mt-4 border-b-4 first:mt-0">
+                    <!-- To keep in the same column -------------------- -->
+                    <div class="break-inside-avoid">
+                        <h2 class="mb-2 text-lg font-bold tracking-widest text-gray-700"
+                            x-text="data.experience.title[lang].toUpperCase()"></h2>
+
+                        <template x-for="job in data.experience.jobs">
+                            <!--Job ------------------------------------------>
+                            <section class="mb-2 break-inside-avoid">
+                                <header>
+                                    <h3 class="text-lg font-semibold rtl:font-medium text-gray-650 leading-snugish"
+                                        x-text="job.title[lang]">
+                                    </h3>
+                                    <p class="leading-normal rtl:leading-7 text-md rtl:text-[1rem] rtl:font-light text-gray-550"
+                                        x-text="job.subTitle[lang]">
+                                    </p>
+                                </header>
+                                <ul class="mt-2.1 text-md text-gray-700 leading-normal">
+                                    <template x-for="task in job.tasks">
+                                        <li class="rtl:mb-2">
+                                            <span class="transform -translate-y-px select-none text-gray-550">
+                                                &rsaquo;
+                                            </span>
+                                            <span class="rtl:font-light" x-text="task[lang]"></span>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </section>
+                        </template>
+                    </div>
+                </section>
+
+                <!--Education -------------------------------------------->
+                <section class="mt-4 first:mt-0">
+                    <!-- To keep in the same column -->
+                    <div class="break-inside-avoid">
+                        <div class="pb-2 md:pb-4 print:pb-4 border-b-4">
+                            <h2 class="mb-2 text-lg font-bold tracking-widest text-gray-700"
+                                x-text="data.education.title[lang].toUpperCase()"></h2>
+                            <template x-for="course in data.education.courses">
+                                <!-- Course ---------------------------------->
+                                <section class="pb-4 mt-4 mb-4 border-b-2 last:border-b-0 break-inside-avoid">
+                                    <header>
+                                        <h3 class="text-lg font-semibold rtl:font-medium text-gray-650 leading-snugish"
+                                            x-text="course.title[lang]"></h3>
+                                        <p class="leading-normal rtl:leading-7 text-md rtl:text-[1rem] rtl:font-light text-gray-550"
+                                            x-text="course.subTitle[lang]"></p>
+                                    </header>
+                                    <p class="mt-1 leading-normal text-md text-gray-650">
+                                        <span class="font-semibold text-gray-700 text-md leading-snugish"
+                                            x-text="isRtl ? 'موضوع:' : 'Subject:'"></span>
+                                        <span x-text="course.major[lang]"></span>
+                                    </p>
+                                </section>
+                            </template>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Projects ---------------------------------------------->
+                <section class="pb-2 md:pb-4 print:pb-4 mt-4 border-b-4 first:mt-0">
+                    <div class="break-inside-avoid">
+                        <!-- To keep in the same column -->
+                        <h2 class="mb-2 text-lg font-bold tracking-widest text-gray-700"
+                            x-text="data.projects.title[lang].toUpperCase()"></h2>
+
+                        <template x-for="project in data.projects.items">
+                            <!-- Project 1 --------------------------------------------->
+                            <section class="pb-4 mb-4 border-b-2 last:border-b-0 break-inside-avoid">
+                                <header>
+                                    <h3 class="text-lg font-semibold rtl:font-medium text-gray-650 leading-snugish">
+                                        <a :href="project.prod_link || project.prev_link" class="group">
+                                            <span x-text="project.title[lang]"></span>
+                                            <span
+                                                class="inline-block mr-3 rtl:mr-0 rtl:ml-3 font-normal transition duration-100 ease-in text-gray-550 print:hidden group-hover:text-gray-700"
+                                                x-text="isRtl ? '↖️' : '↗'">
+                                            </span>
+                                        </a>
+                                        <template x-if="project.src_link">
+                                            <span
+                                                class="inline-block font-normal transition duration-100 ease-in text-gray-550 print:hidden group-hover:text-gray-700">
+                                                <a :href="project.src_link">
+                                                    <i class="fab fa-github"></i>
+                                                </a>
+                                            </span>
+                                        </template>
+                                    </h3>
+                                    <p class="leading-normal rtl:leading-7 text-md rtl:text-[1rem] rtl:font-light text-gray-550"
+                                        x-text="project.subTitle[lang]"></p>
+                                </header>
+                                <p class="mt-2.1 text-gray-700 leading-normal rtl:leading-7"
+                                    x-text="project.description[lang]"></p>
+                            </section>
+                        </template>
+                    </div>
+                </section>
+
+                <!--Begin Skills ----------------------------------------->
+                <section class="pb-4 mt-4 first:mt-0">
+                    <!-- To keep in the same column -->
+                    <div class="break-inside-avoid">
+                        <h2 class="mb-2 text-lg font-bold tracking-widest text-gray-700"
+                            x-text="data.skills.title[lang].toUpperCase()"></h2>
+
+                        <template x-for="stack in data.skills.stacks">
+                            <section class="mb-2 break-inside-avoid">
+                                <header>
+                                    <h3 class="text-lg font-semibold rtl:font-medium text-gray-650 leading-snugish"
+                                        x-text="stack.title[lang]">
+                                    </h3>
+                                </header>
+
+                                <div class="my-1 last:pb-1">
+                                    <ul class="flex flex-wrap text-sm2 leading-relaxed -mr-1.6 -mb-1">
+
+                                        <template x-for="item in stack.items">
+                                            <li class="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                                x-text="item[lang] ? item[lang] : item.en">
+                                            </li>
+                                        </template>
+
+                                    </ul>
+                                </div>
+                            </section>
+                        </template>
+
+                    </div>
+                </section>
+            </div>
+            <!-- end Column -->
+        </div>
+        <!-- end Page -->
+    </main>
     <script type="module" src="./assets/js/index.js"></script>
 </body>
 

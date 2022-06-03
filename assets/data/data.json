@@ -1,0 +1,348 @@
+{
+    "person": {
+        "name": {
+            "en": "Mohammad Mohammadpour",
+            "fa-IR": "محمد محمدپور"
+        },
+        "jobTitle": {
+            "en": "Front-End Web Development",
+            "fa-IR": "توسعه‌دهنده فرانت‌اند"
+        },
+        "location": {
+            "en": "",
+            "fa-IR": ""
+        }
+    },
+    "details": {
+        "portfolio": {
+            "title": {
+                "en": "Portfolio:",
+                "fa-IR": "وب‌سایت:"
+            },
+            "text": "dominusmmp.ir",
+            "link": "https://dominusmmp.ir"
+        },
+        "github": {
+            "title": {
+                "en": "Github:",
+                "fa-IR": "گیت‌هاب:"
+            },
+            "text": "dominusmmp",
+            "link": "https://github.com/dominusmmp"
+        },
+        "email": {
+            "title": {
+                "en": "Email:",
+                "fa-IR": "ایمیل:"
+            },
+            "text": "dominusmmp@gmail.com",
+            "link": "mailto:dominusmmp@gmail.com"
+        },
+        "phone": {
+            "title": {
+                "en": "Phone:",
+                "fa-IR": "تماس:"
+            },
+            "text": "+98(910)470-3733",
+            "link": "tel:+15103095128"
+        }
+    },
+    "summary": {
+        "title": {
+            "en": "Summary",
+            "fa-IR": "درباره من"
+        },
+        "content": {
+            "en": "I'm a front-end web developer with experience of working with modern front-end technologies as HTML5, CSS3, Sass, TailwindCSS, Bootstrap, jQuery, Alpinejs, Webpack, and ViteJs to create beautiful, modern and user-friendly interfaces. I also have the ability and experience to work with popular Adobe softwares as Photoshop, Illustrator, After Effects, Indesign, and Audition. I know Wordpress and its plugins at a good level and can code scripts and bots in Python and PHP languages.",
+            "fa-IR": "از سال 99 فعالیتم رو به صورت فریلنسری شروع کردم و طی پروژه‌هایی که تا به امروز انجام دادم در حال حاضر توانایی طراحی و کدنویسی UI وب‌ با استفاده از تکنولوژی‌های HTML5, CSS3, Sass, Webpack, Vitejs و زبان برنامه نویسی JavaScript و با استفاده از فریم‌ورک‌ها و کتابحانه‌های AlpineJS, jQuery, TailwindCSS, Bootstrap و همچنین ویرایش و تولید رسانه‌های صوتی و تصویری با استفاده از نرم‌افزارهای شرکت Adobe همچون Photoshop, Illustrator, After Effects, Audition, و InDesign را دارم. همچنین با زبان‌های برنامه‌نویسی PHP و Python نیز در حد متوسط (اسکریپت نویسی، کدنویسی خام، ساخت ربات و ...) آشنا هستم و با سیستم مدیریت محتوای وردپرس و افزونه‌های کاربردی آن نیز تجربه خوبی دارم و تا حد خوبی مسلط هستم."
+        }
+    },
+    "experience": {
+        "title": {
+            "en": "EXPERIENCE",
+            "fa-IR": "تجربه‌ها"
+        },
+        "jobs": [
+            {
+                "title": {
+                    "en": "Front-End Web Developer",
+                    "fa-IR": "توسعه‌دهنده فرانت‌اند"
+                },
+                "subTitle": {
+                    "en": "April 2020 \u2013 Present | Freelance",
+                    "fa-IR": "فروردین 1399 \u2013 تا الان | فریلنس"
+                },
+                "tasks": [
+                    {
+                        "en": "designed modern web user interfaces for clients",
+                        "fa-IR": "طراحی UI مدرن و بروز طبق خواسته کارفرما"
+                    },
+                    {
+                        "en": "actively engaged with clients about specifications and designs",
+                        "fa-IR": "ارتباط فعال با کارفرما جهت انجام پروژه طبق ویژگی‌ها و شرایط مد نظر"
+                    },
+                    {
+                        "en": "clean and legible source code",
+                        "fa-IR": "کدنویسی تمیز و خوانا"
+                    },
+                    {
+                        "en": "provided commentary to improve maintainability",
+                        "fa-IR": "کامنت‌گذاری جهت خوانایی کدها و سادگی در بروزرسانی"
+                    },
+                    {
+                        "en": "fostered ongoing services to clients as requested or needed",
+                        "fa-IR": "ارائه بروزرسانی یا خدمات مرتبط در صورت درخواست یا نیاز کارفرما"
+                    }
+                ]
+            }
+        ]
+    },
+    "education": {
+        "title": {
+            "en": "EDUCATION",
+            "fa-IR": "تحصیلات"
+        },
+        "courses": [
+            {
+                "title": {
+                    "en": "Imam Ali Officers' University",
+                    "fa-IR": "دانشگاه افسری امام علی (ع)"
+                },
+                "subTitle": {
+                    "en": "2012 \u2013 2016 | Bachelor of Management",
+                    "fa-IR": "1391 \u2013 1394 | کارشناسی مدیریت"
+                },
+                "major": {
+                    "en": "Defence Management",
+                    "fa-IR": "مدیریت دفاعی"
+                }
+            },
+            {
+                "title": {
+                    "en": "Self-Learn",
+                    "fa-IR": "خودآموزی"
+                },
+                "subTitle": {
+                    "en": "2020 \u2013 2022 | Front-End Web Development",
+                    "fa-IR": "1399 \u2013 1401 | توسعه فرانت‌اند وب"
+                },
+                "major": {
+                    "en": "HTML, CSS, JS and more advanced front-end development technologies as needed",
+                    "fa-IR": "HTML, CSS, JS و تکنولوژی‌های پیشرفته‌تر توسعه فرانت‌اند"
+                }
+            }
+        ]
+    },
+    "projects": {
+        "title": {
+            "en": "PROJECTS",
+            "fa-IR": "پروژه‌ها"
+        },
+        "items": [
+            {
+                "year": 202102,
+                "title": {
+                    "en": "Nemoneh Raisins Corp.",
+                    "fa-IR": "وب‌سایت شرکتی کشمش نمونه"
+                },
+                "subTitle": {
+                    "en": "2021 | Wordpress, SCSS, Bootstrap, jQuery",
+                    "fa-IR": "2021 | Wordpress, SCSS, Bootstrap, jQuery"
+                },
+                "description": {
+                    "en": "Corporation website which designed and optimized as a showcase of the company products",
+                    "fa-IR": "وب‌سایت شرکتی طراحی و بهینه شده جهت نمایش و معرفی محصولات شرکت"
+                },
+                "prod_link": "https://nemoneh-raisins.com/",
+                "prev_link": "",
+                "src_link": ""
+            },
+            {
+                "year": 202103,
+                "title": {
+                    "en": "Rayapixel Agency Landing Page",
+                    "fa-IR": "لندینگ پیج رایاپیکسل"
+                },
+                "subTitle": {
+                    "en": "2021 | TailwindCSS, ViteJs, PWA",
+                    "fa-IR": "2021 | TailwindCSS, ViteJs, PWA"
+                },
+                "description": {
+                    "en": "Simple, responsive, and fast loading landing page with basic PWA features",
+                    "fa-IR": "لندینگ پیج ساده ساده، رسپانسیو، سریع و با ویژگی PWA"
+                },
+                "prod_link": "https://rayapixel.com/",
+                "prev_link": "",
+                "src_link": ""
+            },
+            {
+                "year": 202104,
+                "title": {
+                    "en": "New Way Education Agency",
+                    "fa-IR": "وب‌سایت آژانس آموزشی راه نو"
+                },
+                "subTitle": {
+                    "en": "2021 | Wordpress, TailwindCSS, AlpineJs, ViteJs",
+                    "fa-IR": "2021 | Wordpress, TailwindCSS, AlpineJs, ViteJs"
+                },
+                "description": {
+                    "en": "Fully responsive agency website developed with modern technologies to load fast and make good user experiance",
+                    "fa-IR": "وب‌سایت مدرن و کاملا رسپانسیو طراحی شده با تکنولوژی‌های روز و بهینه شده جهت بارگذاری سریع و ایجاد تجربه خوب کاربری"
+                },
+                "prod_link": "https://new-waay.com/",
+                "prev_link": "",
+                "src_link": ""
+            },
+            {
+                "year": 202105,
+                "title": {
+                    "en": "AriaRad Corp.",
+                    "fa-IR": "وب‌سایت شرکتی آریاراد"
+                },
+                "subTitle": {
+                    "en": "2021 | Wordpress, TailwindCSS, AlpineJs, ViteJs",
+                    "fa-IR": "2021 | Wordpress, TailwindCSS, AlpineJs, ViteJs"
+                },
+                "description": {
+                    "en": "Fully responsive corporation website developed with modern technologies to load fast, make good user experiance, and help the business to grow",
+                    "fa-IR": "وب‌سایت مدرن و کاملا رسپانسیو طراحی شده با تکنولوژی‌های روز و بهینه شده جهت بارگذاری سریع و ایجاد تجربه خوب کاربری"
+                },
+                "prod_link": "https://ariarad-co.com/",
+                "prev_link": "",
+                "src_link": ""
+            }
+        ]
+    },
+    "skills": {
+        "title": {
+            "en": "Skills",
+            "fa-IR": "مهارت‌ها"
+        },
+        "stacks": [
+            {
+                "title": {
+                    "en": "Front-End Web Development",
+                    "fa-IR": "فرانت‌اند"
+                },
+                "items": {
+                    "html": {
+                        "en": "HTML5",
+                        "fa-IR": ""
+                    },
+                    "css3": {
+                        "en": "CSS3",
+                        "fa-IR": ""
+                    },
+                    "scss": {
+                        "en": "SCSS",
+                        "fa-IR": ""
+                    },
+                    "tailwindcss": {
+                        "en": "TailwindCSS",
+                        "fa-IR": ""
+                    },
+                    "boottrap": {
+                        "en": "Bootstrap",
+                        "fa-IR": ""
+                    },
+                    "js": {
+                        "en": "JavaScript",
+                        "fa-IR": ""
+                    },
+                    "vuejs": {
+                        "en": "VueJs",
+                        "fa-IR": ""
+                    },
+                    "alpinejs": {
+                        "en": "AlpineJs",
+                        "fa-IR": ""
+                    },
+                    "jquery": {
+                        "en": "jQuery",
+                        "fa-IR": ""
+                    },
+                    "webpack": {
+                        "en": "Webpack",
+                        "fa-IR": ""
+                    },
+                    "vitejs": {
+                        "en": "ViteJs",
+                        "fa-IR": ""
+                    },
+                    "responsive": {
+                        "en": "Responsive Design",
+                        "fa-IR": ""
+                    },
+                    "wordpress": {
+                        "en": "Wordpress",
+                        "fa-IR": ""
+                    }
+                }
+            },
+            {
+                "title": {
+                    "en": "Back-End Development",
+                    "fa-IR": "بک‌اند"
+                },
+                "items": {
+                    "javascript": {
+                        "en": "JavaScript",
+                        "fa-IR": ""
+                    },
+                    "php": {
+                        "en": "PHP",
+                        "fa-IR": ""
+                    },
+                    "python": {
+                        "en": "Python",
+                        "fa-IR": ""
+                    },
+                    "sql": {
+                        "en": "MySQL",
+                        "fa-IR": ""
+                    },
+                    "git": {
+                        "en": "Git",
+                        "fa-IR": ""
+                    },
+                    "windowsserver": {
+                        "en": "Windows Server",
+                        "fa-IR": ""
+                    },
+                    "linux": {
+                        "en": "Bit of Linux",
+                        "fa-IR": ""
+                    }
+                }
+            },
+            {
+                "title": {
+                    "en": "Graphic",
+                    "fa-IR": "گرافیک"
+                },
+                "items": {
+                    "photoshop": {
+                        "en": "Photoshop",
+                        "fa-IR": ""
+                    },
+                    "illustrator": {
+                        "en": "Illustrator",
+                        "fa-IR": ""
+                    },
+                    "aftereffects": {
+                        "en": "After Effects",
+                        "fa-IR": ""
+                    },
+                    "indesign": {
+                        "en": "InDesign",
+                        "fa-IR": ""
+                    },
+                    "audition": {
+                        "en": "Audition",
+                        "fa-IR": ""
+                    }
+                }
+            }
+        ]
+    }
+}
