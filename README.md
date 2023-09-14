@@ -1,5 +1,0 @@
-- 👋 Hi, I’m dominus
-- 👀 Passionate about technology and building things.
-- 🎨 Ex-frontend developer.
-- 🥷 Currently a security researcher and learner.
-- 📫 You can reach me via my email (dominusmmp@gmail.com).
